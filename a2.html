@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEBSITE DESIGNING USING HTML AND CSS</title>
+    <link rel="stylesheet" href="a2.css">
+    
+</head>
+<body>
+    <div class="main">
+        <nav>
+        <div class="logo">
+                          
+        </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PHONE</a></li>
+                    <li><a href="#">ACCESSORIES</a></li>
+                    <li><a href="#">CART</a></li>
+                    
+                <ul/>
+                
+                
+                              
+            </div>
+            <br>
+            <div class="title">
+                <br>
+                <br>
+                <br><br><br>
+                    <h></h>
+        
+            </div>
+        </nav>
+    <div class="information">
+        <div class="overlay"></div>
+        <img src="centreimg.png" class="mobile"/>
+        <div id="circle">
+            <div class=" feature one">
+                <img src="battery.png"/>
+                <div>
+                    <h1>Battery</h1>
+                    <p>5000mAh,720hrs standby</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="camera.png"/>
+                <div>
+                    <h1>Camera</h1>
+                    <p>12MP,Wide Angle Lens</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="display.png"/>
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5" Mini-drop Fullscreen</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="processor image.png"/>
+                <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon octa-core</p>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="controls">
+    <img src="down.png" class="size" id="upbtn">
+    <h3>Features</h3>
+    <img src="down.png" class="size" id="downbtn">
+</div>
+<script>
+    var circle=document.getElementById("circle");
+    var upbtn=document.getElementById("upbtn");
+    var downbtn=document.getElementById("downbtn");
+    var circle=document.getElementById("circle");
+    var rotatevalue= circle.style.transform;
+    var rotatesum;
+    upbtn.onclick=function(){
+        rotatesum=rotatevalue+"rotate(-90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue=rotatesum;
+
+    }
+    downbtn.onclick=function(){
+        rotatesum=rotatevalue+"rotate(+90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue=rotatesum;
+
+    }
+</script>
+    </body><div>
+
+    </body>
+</html>
